@@ -1,0 +1,10 @@
+<div *ngIf="animal; else animalNotFound" class="class">
+  <p>ID: {{ animal.id }}</p>
+  <h1>Nome: {{ animal.name }}</h1>
+  <p>Tipo: {{ animal.type }}</p>
+</div>
+<ng-template #animalNotFound>
+    <div>
+        <p>Não foi encontrado nenhum animal com a essa ID</p>
+    </div>
+</ng-template>
